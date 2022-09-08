@@ -15,9 +15,29 @@
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
+
+
+/* ICONE TOOLBAR */
+.icona{
+    padding: 0 1em;
+    text-align: center;
+}
+.icon{
+    font-size: 3em;
+}
+.operation-name{
+    text-align: left;
+    font-size: 1.2em;
+    display: block;
+}
+
+.fa-angle-up{
+    font-size: .5em;
+}
+
 
 /* MAIN */
 
@@ -26,24 +46,21 @@ img{
     width: 100%;
     height: calc(100% - 150px);
     position: relative;
-    
-    /* DEBUG */
-    background-color: lightgreen;
+    background-color: #000000;
 }
 
 /* Griglia videocam */
 .row{
     width: 90%;
+    height: calc(100% - 100px);
     display: flex;
     flex-wrap: wrap;
-    
     position: absolute;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
 
-    /* DEBUG */
-    background-color: lightskyblue;
+    overflow: auto;
 }
 
 .col{
@@ -51,12 +68,6 @@ img{
 
     margin: 1em .5em;
     position: relative;
-
-    /* DEBUG */
-    min-width: 150px;
-    min-height: 50px;
-    background-color: orange;
-    border: 1px solid black;
 }
 
 .videocam{
@@ -80,26 +91,39 @@ img{
     width: 100%;
     height: 150px;
     display: flex;
-
-    /* DEBUG */
-    background-color: grey;
 }
 
-.call-action,
-.end-meeting{
-    width: 20%;
-    
-    /* DEBUG */
-    height: 150px;
-    background-color: red;
-    border: 1px solid black;
+/* Call Action */
+.call-action{
+    width: 30%;
+    color: white;
+    background-color: #222222;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+/* Command */
 .command{
     width: 60%;
-
-    /* DEBUG */
-    height: 150px;
-    background-color: red;
-    border: 1px solid black;
+    color: white;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
 }
+
+
+/* End meeting */
+.end-meeting{
+    width: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #4a4a4a;
+    color: red;
+    font-size: 1.5em;
+}
+
+
